@@ -36,18 +36,11 @@ public class Policy {
 
     @NotNull
     private boolean status;
-    @OneToMany(mappedBy = "policy")
-    private List<ClaimDetails> claimDetails;
+
     public Policy() {
     }
 
-    public Policy(
-                  String insuredFirstName,
-                  String insuredLastName,
-                  LocalDate dateOfInsurance,
-                  String emailId,
-                  String vehicleNo,
-                  boolean status) {
+    public Policy( String insuredFirstName, String insuredLastName, LocalDate dateOfInsurance, String emailId, String vehicleNo, boolean status) {
 
         this.insuredFirstName = insuredFirstName;
         this.insuredLastName = insuredLastName;

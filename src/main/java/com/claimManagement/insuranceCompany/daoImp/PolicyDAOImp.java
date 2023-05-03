@@ -1,10 +1,11 @@
 package com.claimManagement.insuranceCompany.daoImp;
 
-import com.claimManagement.insuranceCompany.DTO.PolicyDTO;
 import com.claimManagement.insuranceCompany.DAO.PolicyDAO;
+import com.claimManagement.insuranceCompany.DTO.PolicyDTO;
+import com.claimManagement.insuranceCompany.entities.Policy;
 import com.claimManagement.insuranceCompany.exceptions.CustomException;
-import com.claimManagement.insuranceCompany.repositories.PolicyRepository;
 
+import com.claimManagement.insuranceCompany.repositories.PolicyRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +20,7 @@ public class PolicyDAOImp implements PolicyDAO {
 
    //injection of PolicyRepository
     @Autowired
-     PolicyRepository policyRepository;
+   PolicyRepository policyRepository;
 
     //inserting into policy
     @Override
